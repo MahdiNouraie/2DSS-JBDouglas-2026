@@ -9,7 +9,7 @@ print("Main setting: n = 100, p = 1000, s = 5 relevant variables, 3 impostors, l
 print("\nSlide 8 (Stability Selection, delta = 0, 200 half-samples)")
 print("  relevant x1..x5 :", F[0, :5].round(3), " average %.3f" % F[0, :5].mean())
 print("  impostors       :", F[0, 5:].round(3), " average %.3f" % F[0, 5:].mean())
-print("\nSlide 10 (noise sweep) / speaker notes")
+print("\nSlide 10 (noise sweep)")
 for dd in (0, 0.5, 0.75):
     print("  delta = %.2f: weaker relevant (x1..x4) avg %.3f, impostors avg %.3f, strong x5 %.3f" % (dd, F[i(dd), :4].mean(), F[i(dd), 5:].mean(), F[i(dd), 4]))
 print("\nSlide 13 (noise path), averages per delta")
